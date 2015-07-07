@@ -46,6 +46,19 @@ The `<aria-accordion>` [custom element] registers an [attached callback] that's 
 * `element.close()` sets `element.expanded = false`.
 * `element.toggle()` toggles the expanded state, setting it to `false` if it's `true` and vice-versa.
 
+### Events
+`<aria-accordion>` elements also dispatch `open` and `close` events, which you can listen for with:
+
+```js
+var element = document.querySelector('aria-accordion');
+element.addEventListener('open', function() {
+  console.log('open!');
+});
+element.addEventListener('close', function() {
+  console.log('closed!');
+});
+```
+
 [document.registerElement()]: https://developer.mozilla.org/en-US/docs/Web/API/Document/registerElement
 [document-register-element polyfill]: https://github.com/WebReflection/document-register-element
 [valid id]: http://www.w3.org/TR/html5/dom.html#the-id-attribute
