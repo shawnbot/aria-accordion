@@ -34,6 +34,28 @@
         </div>
       </aria-accordion>
 
+
+      <h1>Advanced Usage</h1>
+
+      <aria-accordion>
+        <h2><button aria-controls="nested-content0">With nested accordions</code></button></h2>
+
+        <aria-accordion id="nested-content0">
+          <h3><button aria-controls="nested-content1">This should control the inner content</button></h3>
+          <div id="nested-content1">
+            <p>This content should be hiddenvisible by default even if the outer accordion is expanded.</p>
+          </div>
+        </aria-accordion>
+
+        <aria-accordion aria-expanded="true">
+          <h3><button aria-controls="nested-content2">This should also control the inner content</button></h3>
+          <div id="nested-content2">
+            <p>This content should be visible by default, even if the outer accordion is expanded.</p>
+          </div>
+        </aria-accordion>
+
+      </aria-accordion>
+
     </section>
 
   </body>
