@@ -24,6 +24,11 @@ The important bits are:
 * The `<div id="content">` is the content to be shown and hidden when the switch is clicked (or tapped).
 * The `aria-controls` and `id` attributes can be any [valid id], but they **must match**.
 
+## Browser Compatibility
+The JavaScript **requires** either a native (as of this writing, only [Chrome 36 or above](http://caniuse.com/#feat=custom-elements)) or [polyfilled][document-register-element polyfill] implementation of [document.registerElement()].
+
+Older browsers, such as IE9 and below, will also require an ES5 shim for Array methods, such as [es5-shim] or [aight]. Or, if you want to keep your polyfills as slim as possible, you can substitute either of these with a [custom polyfill][autopolyfiller] for `Array.prototype.forEach`.
+
 ## How It Works
 The `<aria-accordion>` [custom element] registers an [attached callback] that's called for each element on the page and whenever an element with that name is added to the document via JavaScript. The attached callback does the following:
 
@@ -64,3 +69,6 @@ element.addEventListener('close', function() {
 [valid id]: http://www.w3.org/TR/html5/dom.html#the-id-attribute
 [custom element]: http://www.w3.org/TR/custom-elements/
 [attached callback]: http://www.w3.org/TR/custom-elements/#dfn-attached-callback
+[es5-shim]: https://github.com/es-shims/es5-shim
+[autopolyfiller]: https://github.com/azproduction/autopolyfiller
+[aight]: https://github.com/shawnbot/aight
