@@ -65,6 +65,7 @@
             if (value !== this.expanded && this.__controller) {
               this.__controller.setAttribute(EXPANDED, value);
               this.update();
+              this.dispatchEvent(new CustomEvent(value ? 'open' : 'close'));
             }
           }
         },
