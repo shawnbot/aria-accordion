@@ -3,14 +3,20 @@
   <head>
     <meta charset="utf8">
     <title>&lt;aria-accordion&gt;</title>
-    <script src="document-register-element.js"></script>
+
+    <!-- the document.registerElement() polyfill -->
+    <script src="lib/document-register-element.js"></script>
+    <!-- the aria-accordion custom element definition -->
     <script src="aria-accordion.js"></script>
+    <!-- some useful aria-accordion styles -->
     <link rel="stylesheet" href="aria-accordion.css">
+
     <style type="text/css">
 
       body {
         padding: 2em;
         margin: 0;
+        font-family: Georgia, 'Times New Roman', serif;
       }
 
       [aria-hidden="true"] {
