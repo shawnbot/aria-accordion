@@ -41,8 +41,11 @@
     </style>
   </head>
   <body>
+    <header>
+      <h1><tt>&lt;aria-accordion&gt;</tt></h1>
+    </header>
 
-    <section id="basic">
+    <section id="usage">
       <h1>Basic Usage</h1>
 
       <aria-accordion>
@@ -52,8 +55,8 @@
         </div>
       </aria-accordion>
 
-      <aria-accordion>
-        <h2><button aria-controls="basic-content1" aria-expanded="true">With <tt>aria-expanded="true"</tt></button></h2>
+      <aria-accordion aria-expanded="true">
+        <h2><button aria-controls="basic-content1">With <tt>aria-expanded="true"</tt></button></h2>
         <div id="basic-content1">
           <p>This content should be visible by default.</p>
         </div>
