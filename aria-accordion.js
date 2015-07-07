@@ -79,7 +79,7 @@
 
         toggle: {value: function() {
           this.expanded = !this.expanded;
-        }},
+        }}
       }
     )
   });
