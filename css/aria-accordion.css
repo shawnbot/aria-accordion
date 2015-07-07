@@ -1,3 +1,4 @@
+
 aria-accordion button[aria-controls] {
   display: block;
   border: none;
@@ -10,8 +11,11 @@ aria-accordion button[aria-controls] {
           appearance: none;
 }
 
+aria-accordion button[aria-controls]:focus {
+  background: #f8f;
+}
+
 aria-accordion button[aria-controls]:before {
-  content: "\25B6 ";
   display: inline-block;
   width: 1.2em;
   text-align: left;
@@ -21,5 +25,9 @@ aria-accordion button[aria-controls]:before {
 
 aria-accordion[aria-expanded="true"] button[aria-controls]:before {
   content: "\25BC ";
+}
+
+aria-accordion[aria-expanded="false"] button[aria-controls]:before {
+  content: "\25B6 ";
 }
 
