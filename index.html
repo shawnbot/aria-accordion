@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf8">
+    <title>&lt;aria-accordion&gt;</title>
+    <script src="document-register-element.js"></script>
+    <script src="aria-accordion.js"></script>
+    <link rel="stylesheet" href="aria-accordion.css">
+    <style type="text/css">
+
+      body {
+        padding: 2em;
+        margin: 0;
+      }
+
+      [aria-hidden="true"] {
+        display: none;
+      }
+
+      p:last-child {
+        margin-bottom: 0;
+      }
+
+      aria-accordion {
+        display: block;
+        padding: 1em;
+        border: 1px solid #ccc;
+      }
+
+      aria-accordion h2 {
+        margin: 0;
+      }
+
+
+    </style>
+  </head>
+  <body>
+
+    <section id="basic">
+      <h1>Basic Usage</h1>
+
+      <aria-accordion>
+        <h2><button aria-controls="basic-content0">Without <tt>aria-expanded</tt></button></h2>
+        <div id="basic-content0">
+          <p>This content should be hidden by default.</p>
+        </div>
+      </aria-accordion>
+
+      <aria-accordion>
+        <h2><button aria-controls="basic-content1" aria-expanded="true">With <tt>aria-expanded="true"</tt></button></h2>
+        <div id="basic-content1">
+          <p>This content should be visible by default.</p>
+        </div>
+      </aria-accordion>
+
+    </section>
+
+  </body>
+</html>

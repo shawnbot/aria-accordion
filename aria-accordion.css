@@ -1,0 +1,25 @@
+aria-accordion button[aria-controls] {
+  display: block;
+  border: none;
+  background: transparent;
+  font: inherit;
+  padding: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+      -ms-appearance: none;
+          appearance: none;
+}
+
+aria-accordion button[aria-controls]:before {
+  content: "\25B6 ";
+  display: inline-block;
+  width: 1.2em;
+  text-align: left;
+  font-size: 80%;
+  color: #999;
+}
+
+aria-accordion[aria-expanded="true"] button[aria-controls]:before {
+  content: "\25BC ";
+}
+

@@ -1,0 +1,26 @@
+{
+  "name": "aria-accordion",
+  "version": "1.0.0",
+  "description": "An accessible HTML accordion custom element",
+  "main": "aria-accordion.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shawnbot/aria-accordion"
+  },
+  "keywords": [
+    "aria",
+    "html",
+    "accordion",
+    "accessibility",
+    "508"
+  ],
+  "author": "Shawn Allen",
+  "license": "CC0",
+  "bugs": {
+    "url": "https://github.com/shawnbot/aria-accordion/issues"
+  },
+  "homepage": "https://github.com/shawnbot/aria-accordion"
+}
